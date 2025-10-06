@@ -3,65 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>静心阁 | 我的个人文集</title>
+    <title>静心阁 | 个人文集</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="一个分享个人思考与创作的地方。">
+    <meta name="description" content="159sunsu753的个人创作空间">
 </head>
 <body>
-    <div class="container">
-        <header class="site-header">
-            <h1 class="site-title">静心阁</h1>
-            <p class="site-description">记录思绪，分享感悟</p>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- 主导航 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">静心阁</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <section class="intro-section">
-                <h2 style="display: none;">欢迎</h2> <!-- 隐藏标题，用于语义化 -->
-                <p>欢迎来到我的个人空间。这里是我书写故事、记录想法的地方。希望你能找到感兴趣的内容。</p>
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 欢迎语 -->
+            <section class="welcome-section">
+                <h1>欢迎来到我的创作空间</h1>
+                <p>这里是我记录思考、分享感悟的地方。选择您感兴趣的章节开始阅读。</p>
             </section>
 
-            <section class="articles-section">
-                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">文章列表</h2>
-                <ul class="article-list">
-                    <!-- 文章条目 1 -->
-                    <li class="article-item">
-                        <h3 class="article-title">
-                            <a href="article-1.html">清晨的漫步</a>
-                        </h3>
-                        <div class="article-meta">发布于：2024年5月20日 · 阅读约需3分钟</div>
-                        <p class="article-summary">清晨的阳光透过薄雾，洒在铺满落叶的小径上。这是一天中最宁静的时刻，仿佛整个世界都还在沉睡...</p>
-                    </li>
+            <!-- 章节网格 -->
+            <section class="chapter-grid">
+                <!-- 技术随笔章节 -->
+                <a href="chapter-tech.html" class="chapter-card">
+                    <div class="chapter-icon">💻</div>
+                    <h2>技术随笔</h2>
+                    <p>编程心得、技术思考与学习笔记。记录在技术道路上的探索与成长。</p>
+                    <div class="article-count">5篇文章</div>
+                </a>
 
-                    <!-- 文章条目 2 -->
-                    <li class="article-item">
-                        <h3 class="article-title">
-                            <a href="article-2.html">关于技术的思考</a>
-                        </h3>
-                        <div class="article-meta">发布于：2024年5月15日 · 阅读约需5分钟</div>
-                        <p class="article-summary">技术在不断改变我们的生活，但有时我们需要停下来思考：这些变化究竟将我们带向何方？是更紧密的连接，还是更深的孤独？</p>
-                    </li>
+                <!-- 生活感悟章节 -->
+                <a href="chapter-life.html" class="chapter-card">
+                    <div class="chapter-icon">🌿</div>
+                    <h2>生活感悟</h2>
+                    <p>日常生活中的观察与思考，平凡日子里的不平凡发现。</p>
+                    <div class="article-count">8篇文章</div>
+                </a>
 
-                    <!-- 文章条目 3 -->
-                    <li class="article-item">
-                        <h3 class="article-title">
-                            <a href="article-3.html">夜雨</a>
-                        </h3>
-                        <div class="article-meta">发布于：2024年5月10日 · 阅读约需2分钟</div>
-                        <p class="article-summary">雨滴敲打着窗棂，像是一首无言的催眠曲。在这样的夜晚，思绪总是飘得很远很远...</p>
-                    </li>
-                </ul>
+                <!-- 小说创作章节 -->
+                <a href="chapter-novel.html" class="chapter-card">
+                    <div class="chapter-icon">📚</div>
+                    <h2>小说创作</h2>
+                    <p>原创小说与故事创作，构建想象中的世界与人物。</p>
+                    <div class="article-count">3篇文章</div>
+                </a>
+
+                <!-- 读书笔记章节 -->
+                <a href="chapter-book.html" class="chapter-card">
+                    <div class="chapter-icon">📖</div>
+                    <h2>读书笔记</h2>
+                    <p>阅读过程中的感悟与收获，与好书的不期而遇。</p>
+                    <div class="article-count">6篇文章</div>
+                </a>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer class="site-footer">
-            <p>© 2024 静心阁. 保留所有权利。</p>
-        </footer>
-    </div>
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 静心阁 · 159sunsu753 的个人创作空间</p>
+        </div>
+    </footer>
 </body>
 </html>
