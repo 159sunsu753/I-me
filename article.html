@@ -3,56 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文章标题 - 静心阁</title>
+    <title>Vue与React的设计哲学对比 - 技术随笔 - 静心阁</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="site-header">
-            <h1 class="site-title">静心阁</h1>
-            <p class="site-description">记录思绪，分享感悟</p>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- 主导航 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">静心阁</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <article>
-                <header class="article-header">
-                    <h1>文章标题</h1>
-                    <div class="article-meta">发布于：2024年5月20日</div>
-                </header>
-
-                <div class="article-content">
-                    <p>这里是文章的正文内容。</p>
-
-                    <p>这个模板使用了 white-space: pre-wrap; 属性，</p>
-                    <p>所以您的换行和空格都会被保留。</p>
-
-                    <p>比如这样的空行，</p>
-
-                    <p>以及这一行前面的空格都会在网页上显示出来。</p>
-
-                    <h2>二级标题</h2>
-                    <p>您可以使用标准的HTML标签来格式化您的内容。</p>
-                    <p>比如这一段文字，它展示了在文章中使用段落标签的效果。</p>
-
-                    <h3>三级标题</h3>
-                    <p>继续您的写作...</p>
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 文章头部 -->
+            <header class="article-header">
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a> &gt; 
+                    <a href="chapter-tech.html">技术随笔</a> &gt; 
+                    <span>当前文章</span>
+                </nav>
+                <h1>Vue与React的设计哲学对比</h1>
+                <div class="article-meta">
+                    <span>作者：159sunsu753</span>
+                    <span>发布于：2024年5月25日</span>
+                    <span>阅读时间：约8分钟</span>
                 </div>
+            </header>
 
-                <footer class="article-footer">
-                    <a href="index.html" class="back-link">← 返回首页</a>
-                </footer>
+            <!-- 文章正文 -->
+            <article class="article-content">
+                <p>在现代前端开发中，Vue和React作为最受欢迎的两个框架，它们的设计哲学有着显著的差异。理解这些差异有助于我们更好地选择适合项目的技术栈。</p>
+
+                <h2>一、响应式系统的不同实现</h2>
+
+                <p>Vue采用基于依赖追踪的响应式系统。当你修改数据时，Vue会自动检测变化并更新相关的DOM。</p>
+
+                <p>这种机制的优点在于开发者的心智负担较小，不需要手动处理状态更新。</p>
+
+                <p>而React则采用基于不可变数据和虚拟DOM的机制。状态更新需要通过setState或useState来触发，然后通过虚拟DOM的diff算法来最小化DOM操作。</p>
+
+                <h2>二、组件化思想的差异</h2>
+
+                <p>Vue推崇的是"选项式API"，将组件的逻辑按照选项（data、methods、computed等）进行组织。</p>
+
+                <p>这种方式的优势在于结构清晰，对于初学者来说更容易上手。</p>
+
+                <p>React则强调"函数式编程"思想，特别是引入Hooks之后，组件完全由函数构成。</p>
+
+                <p>这种方式更加灵活，可以更好地实现逻辑复用。</p>
+
+                <h2>三、学习曲线与生态系统</h2>
+
+                <p>Vue的学习曲线相对平缓，官方文档完善，中文支持良好。</p>
+
+                <p>React的学习曲线前期较陡，需要理解JSX、不可变性、函数式编程等概念。</p>
+
+                <p>但在生态系统方面，React拥有更丰富的第三方库和更活跃的社区。</p>
+
+                <h2>四、适用场景</h2>
+
+                <p>Vue更适合：</p>
+                <p>• 快速原型开发</p>
+                <p>• 中小型项目</p>
+                <p>• 团队中新手较多的情况</p>
+
+                <p>React更适合：</p>
+                <p>• 大型复杂应用</p>
+                <p>• 需要高度自定义的场景</p>
+                <p>• 与React Native共享逻辑的项目</p>
+
+                <p>总之，两个框架都在不断进化，选择哪个更应该考虑团队熟悉度、项目需求和长期维护成本。</p>
             </article>
-        </main>
 
-        <footer class="site-footer">
-            <p>© 2024 静心阁. 保留所有权利。</p>
-        </footer>
-    </div>
+            <!-- 导航按钮 -->
+            <div class="nav-buttons">
+                <a href="chapter-tech.html" class="btn btn-secondary">← 返回技术随笔</a>
+                <a href="article-microfrontend.html" class="btn">下一篇：微前端架构实践指南 →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 静心阁 · 159sunsu753 的个人创作空间</p>
+        </div>
+    </footer>
 </body>
 </html>
